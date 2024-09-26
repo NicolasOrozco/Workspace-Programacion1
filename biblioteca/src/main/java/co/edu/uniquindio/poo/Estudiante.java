@@ -1,38 +1,33 @@
 package co.edu.uniquindio.poo;
+import java.util.Collection;
 
 public class Estudiante extends Persona {
-    private String id;
+    private int edad;
+    private Collection<Prestamo> prestamos;
 
-    /**
-     * Método constructor de la clase Estudiante
-     * 
-     * @param nombre   del estudiante
-     * @param cedula   del estudiante
-     * @param telefono del estudiante
-     * @param correo   del estudiante
-     * @param id       del estudiante
-     */
-    public Estudiante(String nombre, String cedula, String telefono, String correo, String id) {
+
+
+    public Estudiante(String nombre, String cedula, int telefono, String correo, int edad) {
         super(nombre, cedula, telefono, correo);
-        this.id = id;
+        this.edad = edad;
     }
 
     /**
-     * Método para
+     * Método para obtener la edad de un estudiante
      * 
-     * @return
+     * @return edad
      */
-    public String getId() {
-        return id;
+    public int getEdad() {
+        return edad;
     }
 
     /**
-     * Método para
+     * Método para modificar la edad de un estudiante
      * 
-     * @param id
+     * @param edad del estudiante
      */
-    public void setId(String id) {
-        this.id = id;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     /**
@@ -40,7 +35,7 @@ public class Estudiante extends Persona {
      */
     @Override
     public String toString() {
-        return "Estudiante [" + super.toString() + "Id=" + id + "]";
+        return "Estudiante [" + super.toString() + "edad" + edad + "]";
     }
 
 }

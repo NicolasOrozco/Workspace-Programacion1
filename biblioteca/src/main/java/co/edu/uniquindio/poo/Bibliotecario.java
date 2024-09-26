@@ -1,18 +1,13 @@
 package co.edu.uniquindio.poo;
+import java.util.Collection;
 
 public class Bibliotecario extends Persona {
     private double salario;
+    private int antiguedad;
+    private Collection<Prestamo> prestamos;
 
-    /**
-     * Método constructor de la clase Bibliotecario
-     * 
-     * @param nombre   del bibliotecario
-     * @param cedula   del bibliotecario
-     * @param telefono del bibliotecario
-     * @param correo   del bibliotecario
-     * @param salario  del bibliotecario
-     */
-    public Bibliotecario(String nombre, String cedula, String telefono, String correo, double salario) {
+
+    public Bibliotecario(String nombre, String cedula, int telefono, String correo, double salario) {
         super(nombre, cedula, telefono, correo);
         this.salario = salario;
     }
@@ -35,6 +30,21 @@ public class Bibliotecario extends Persona {
         this.salario = salario;
     }
 
+    /**
+     * Método para obtener los años de antigüedad de un bibliotecario
+     * @return antiguedad
+     */
+    public int getAntiguedad(){
+        return antiguedad;
+    }
+
+    /**
+     * Método para modificar los años de antigüedad de un bibliotecario 
+     * @param antiguedad del bibliotecario
+     */
+    public void setAntiguedad(int antiguedad){
+        this.antiguedad = antiguedad;
+    }
     /**
      * Método toString de la clase Bibliotecario
      */

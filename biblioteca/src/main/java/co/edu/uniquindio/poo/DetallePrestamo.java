@@ -11,8 +11,8 @@ public class DetallePrestamo {
      * @param cantidad de unidades del libro
      * @param libro a prestar
      */
-    public DetallePrestamo(double subtotal, int cantidad, Libro libro) {
-        this.subtotal = subtotal;
+    public DetallePrestamo(int cantidad, Libro libro) {
+        this.subtotal = 0;
         this.cantidad = cantidad;
         this.libro = libro;
     }

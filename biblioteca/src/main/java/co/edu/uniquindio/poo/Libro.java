@@ -3,14 +3,10 @@ package co.edu.uniquindio.poo;
 import java.time.LocalDate;
 
 public class Libro {
-    private String titulo;
-    private String codigo;
-    private String isbn;
+    private String titulo, codigo, isbn, autor, editorial;
     private int unidadesDisponibles;
-    private String autor;
-    private String editorial;
     private LocalDate fecha;
-    private Estado estado;
+    private boolean estado;
 
     /**
      * Método constructor de la clase Libro

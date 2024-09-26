@@ -3,7 +3,7 @@ package co.edu.uniquindio.poo;
 public class Persona {
     private String nombre;
     private String cedula;
-    private String telefono;
+    private int telefono;
     private String correo;
 
     /**
@@ -14,7 +14,7 @@ public class Persona {
      * @param telefono del estudiante
      * @param correo   del estudiante
      */
-    public Persona(String nombre, String cedula, String telefono, String correo) {
+    public Persona(String nombre, String cedula, int telefono, String correo) {
         this.nombre = nombre;
         this.cedula = cedula;
         this.telefono = telefono;
@@ -63,7 +63,7 @@ public class Persona {
      * 
      * @return telefono
      */
-    public String getTelefono() {
+    public int getTelefono() {
         return telefono;
     }
 
@@ -72,7 +72,7 @@ public class Persona {
      * 
      * @param telefono de la persona
      */
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
 
